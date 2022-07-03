@@ -1,0 +1,21 @@
+config:
+  defaultChartId: helm-terraform-gcp
+
+vars: {}
+
+charts:
+  helm-terraform-gcp:
+    chartUrl: https://its-software-services-devops.github.io/helm-terraform-gcp/
+    version: 1.1.11
+
+copy:
+  - from: terragrunt-${ENV.ENVIRONMENT}.hcl
+    toFile: "terragrunt.hcl"
+
+#  - from: 02-configs/gce-setting-${ENV.ENVIRONMENT}.tf
+#    toDir: ""
+
+#  - from: gs://acd-${ENV.ENVIRONMENT_ALIAS}-vault/onix/*
+#    toDir: ""
+
+infraIasc: []
