@@ -48,8 +48,9 @@ module "gke-cluster" {
   master_ipv4_cidr_block  = local.master_ipv4_cidr_block
 
   # GKE metering
-  enable_network_egress_metering = true
-  metering_bigquery_dataset = "gke_metering"
+  #enable_network_egress_metering = false
+  #metering_bigquery_dataset = "gke_metering"
+  
   # Workload Identity
   enable_workload_identity = true
   # GKE backup
