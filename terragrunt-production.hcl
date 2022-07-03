@@ -9,9 +9,9 @@ inputs = {
   vpc_name  = "nap-devops-vpc"
   top_level_domain = "devops.napbiotec.io"
 
-  gke_min_node_count = "2"
-  gke_max_node_count = "2"
-  gke_node_count = "2"
+  gke_min_node_count = "4"
+  gke_max_node_count = "4"
+  gke_node_count = "4"
   gke_machine_type = "e2-medium"
 }
 
