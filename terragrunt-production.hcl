@@ -12,7 +12,7 @@ inputs = {
   gke_min_node_count = "2"
   gke_max_node_count = "2"
   gke_node_count = "2"
-  gke_machine_type = "e2-standard-4"
+  gke_machine_type = "e2-medium"
 }
 
 ################################## Common ########################################
