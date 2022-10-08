@@ -3,7 +3,7 @@ locals {
 
   cluster_name = "devops-apps"
   network_name = var.vpc_name
-  kubernetes_version_1 = "1.23.5-gke.2400"
+  kubernetes_version_1 = "1.24.5-gke.600"
   nodes_subnetwork_name = "gke-asia-southeast1-001"
   pods_secondary_ip_range_name = "devops-gke-pods"
   services_secondary_ip_range_name = "devops-gke-svc"
